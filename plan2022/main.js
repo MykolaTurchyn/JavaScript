@@ -112,23 +112,85 @@
 // ulCreator("bro");
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
-function ulCreator(text,count) {
-    for (let i = 0; i < count; i++) {
-        document.write(`<div>
-<ul>
-<li>${text}</li>
-<li>${text}</li>
-<li>${text}</li>
-</ul></div>`);
-    }
-    }
-
-
-
-ulCreator("bro",7);
-
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+// let arrOfUsers = [
+//     {
+//         id: 1,
+//         name: "Leanne Graham",
+//         username: "Bret",
+//         email: "Sincere@april.biz"
+//     },
+//     {
+//         id: 2,
+//         name: "Ervin Howell",
+//         username: "Antonette",
+//         email: "Shanna@melissa.tv"
+//     },
+//     {
+//         id: 3,
+//         name: "Clementine Bauch",
+//         username: "Samantha",
+//         email: "Nathan@yesenia.net"
+//     },
+//     {
+//         id: 4,
+//         name: "Patricia Lebsack",
+//         username: "Karianne",
+//         email: "Julianne.OConner@kory.org"
+//     },
+//     {
+//         id: 5,
+//         name: "Chelsey Dietrich",
+//         username: "Kamren",
+//         email: "Lucio_Hettinger@annie.ca"
+//     },
+//     {
+//         id: 6,
+//         name: "Mrs. Dennis Schulist",
+//         username: "Leopoldo_Corkery",
+//         email: "Karley_Dach@jasper.info"
+//     },
+//     {
+//         id: 7,
+//         name: "Kurtis Weissnat",
+//         username: "Elwyn.Skiles",
+//         email: "Telly.Hoeger@billy.biz"
+//     },
+//     {
+//         id: 8,
+//         name: "Nicholas Runolfsdottir V",
+//         username: "Maxime_Nienow",
+//         email: "Sherwood@rosamond.me"
+//     },
+//     {
+//         id: 9,
+//         name: "Glenna Reichert",
+//         username: "Delphine",
+//         email: "Chaim_McDermott@dana.io"
+//     },
+//     {
+//         id: 10,
+//         name: "Clementina DuBuque",
+//         username: "Moriah.Stanton",
+//         email: "Rey.Padberg@karina.biz"
+//     }
+// ];
+// function objToWeb(...array) {
+//     for (const user of array) {
+//         for (const item of user) {
+//             document.write(`<div>
+// <p>ID: ${item.id}</p>
+// <p>Name: ${item.name}</p>
+// <p>Username: ${item.username}</p>
+// <p>Email: ${item.email}</p>
+// </div>`);
+        // }
+    // }
+// }
+// objToWeb(arrOfUsers);
+
 // - створити функцію яка повертає найменьше число з масиву
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
@@ -140,3 +202,22 @@ ulCreator("bro",7);
 //     return res;
 // }
 // console.log(sumInArr(1, 2, 3, 4));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
