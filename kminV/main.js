@@ -91,17 +91,37 @@
 // console.log(seresne(num));
 
 // 9) Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
-// EXAMPLE:
-//     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]
+// let smArr = [{name: 'Dima', age: 13}, {model: 'Camry'}];
+// function keys(array) {
+//     let keyArr = [];
+//     for (const item of array) {
+//         for (const key in item) {
+//             keyArr.push(key);
+//         }
+//     }
+//     return keyArr;
+// }
+// console.log(keys(smArr));
+
 // 10) Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
-// EXAMPLE:
-//     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
+// let smArr = [{name: 'Dima', age: 13}, {model: 'Camry'}];
+// function valuesArr(array) {
+//     let values = [];
+//     for (const item of array) {
+//         for (const value in item) {
+//             values.push(item[value]);
+//         }
+//     }
+//     return values;
+// }
+// console.log(valuesArr(smArr));
+
 // 11) створити функцію  яка скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
 //     EXAMPLE:
 // [1,2,3,4]
-//     [2,3,4,5]
+// [2,3,4,5]
 // результат
-//     [3,5,7,9]
+// [3,5,7,9]
 //
 //
 // ============================================================================================
