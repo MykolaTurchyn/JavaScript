@@ -69,25 +69,442 @@
 // console.log(filter);
 
 // описати колоду карт
+// let cards = [
+//     {
+//         suit: null,
+//         value: "joker",
+//         color: "red"
+//     },
+//     {
+//         suit: null,
+//         value: "joker",
+//         color: "black"
+//     },
+//     {
+//         suit: "spade",
+//         value: "6",
+//         color: "black"
+//     },
+//     {
+//         suit: "diamond",
+//         value: "6",
+//         color: "red"
+//     },
+//     {
+//         suit: "heart",
+//         value: "6",
+//         color: "red"
+//     },
+//     {
+//         suit: "clubs",
+//         value: "6",
+//         color: "black"
+//     },
+//     {
+//         suit: "spade",
+//         value: "7",
+//         color: "black"
+//     },
+//     {
+//         suit: "diamond",
+//         value: "7",
+//         color: "red"
+//     },
+//     {
+//         suit: "heart",
+//         value: "7",
+//         color: "red"
+//     },
+//     {
+//         suit: "clubs",
+//         value: "7",
+//         color: "black"
+//     },
+//     {
+//         suit: "spade",
+//         value: "8",
+//         color: "black"
+//     },
+//     {
+//         suit: "diamond",
+//         value: "8",
+//         color: "red"
+//     },
+//     {
+//         suit: "heart",
+//         value: "8",
+//         color: "red"
+//     },
+//     {
+//         suit: "clubs",
+//         value: "8",
+//         color: "black"
+//     },
+//     {
+//         suit: "spade",
+//         value: "9",
+//         color: "black"
+//     },
+//     {
+//         suit: "diamond",
+//         value: "9",
+//         color: "red"
+//     },
+//     {
+//         suit: "heart",
+//         value: "9",
+//         color: "red"
+//     },
+//     {
+//         suit: "clubs",
+//         value: "9",
+//         color: "black"
+//     },
+//     {
+//         suit: "spade",
+//         value: "10",
+//         color: "black"
+//     },
+//     {
+//         suit: "diamond",
+//         value: "10",
+//         color: "red"
+//     },
+//     {
+//         suit: "heart",
+//         value: "10",
+//         color: "red"
+//     },
+//     {
+//         suit: "clubs",
+//         value: "10",
+//         color: "black"
+//     },
+//     {
+//         suit: "spade",
+//         value: "jack",
+//         color: "black"
+//     },
+//     {
+//         suit: "diamond",
+//         value: "jack",
+//         color: "red"
+//     },
+//     {
+//         suit: "heart",
+//         value: "jack",
+//         color: "red"
+//     },
+//     {
+//         suit: "clubs",
+//         value: "jack",
+//         color: "black"
+//     },
+//     {
+//         suit: "spade",
+//         value: "queen",
+//         color: "black"
+//     },
+//     {
+//         suit: "diamond",
+//         value: "queen",
+//         color: "red"
+//     },
+//     {
+//         suit: "heart",
+//         value: "queen",
+//         color: "red"
+//     },
+//     {
+//         suit: "clubs",
+//         value: "queen",
+//         color: "black"
+//     },
+//     {
+//         suit: "spade",
+//         value: "king",
+//         color: "black"
+//     },
+//     {
+//         suit: "diamond",
+//         value: "king",
+//         color: "red"
+//     },
+//     {
+//         suit: "heart",
+//         value: "king",
+//         color: "red"
+//     },
+//     {
+//         suit: "clubs",
+//         value: "king",
+//         color: "black"
+//     },
+//     {
+//         suit: "spade",
+//         value: "ace",
+//         color: "black"
+//     },
+//     {
+//         suit: "diamond",
+//         value: "ace",
+//         color: "red"
+//     },
+//     {
+//         suit: "heart",
+//         value: "ace",
+//         color: "red"
+//     },
+//     {
+//         suit: "clubs",
+//         value: "ace",
+//         color: "black"
+//     }
+// ];
+
 // - знайти піковий туз
-// - всі шістки
-// - всі червоні карти
-// - всі буби
-// - всі трефи від 9 та більше
-//
-//
-// {
-//     cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
-//         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
-//     color:'', // 'red','black'
+// const findCardWithTwoParams = (suit, value) => {
+//     return cards.find((card) => {
+//         return (card.suit === suit) && (value === card.value);
+//     });
 // }
-//
-//
+// console.log(findCardWithTwoParams("spade", "ace"));
+
+// - всі шістки
+// const getSomeCards =(arr, value) => {
+//     return arr.filter((card) => {
+//         return card.value === value;
+//     })
+// }
+// console.log(getSomeCards(cards, "6"));
+
+// - всі червоні карти
+// const allColor = (arr,color) => {
+//   return arr.filter((card) => {
+//       return card.color === color;
+//   })
+// }
+// console.log(allColor(cards, "red"));
+
+// - всі буби
+// const getAllDiamonds = (arr) => {
+//     return arr.filter((card) => {
+//         return card.suit === "diamond"
+//     })
+// }
+// console.log(getAllDiamonds(cards));
+
+// - всі трефи від 9 та більше
+// console.log(cards.filter((card) => {
+//     return card.suit === "clubs" && !(card.value < 9)
+// }));
+
 // Додатково по reduce
 // Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
 // {
 //     spades:[],
-//         diamonds:[],
+//     diamonds:[],
 //     hearts:[],
 //     clubs:[]
 // }
+// let cards = [
+//     {
+//         suit: null,
+//         value: "joker",
+//         color: "red"
+//     },
+//     {
+//         suit: null,
+//         value: "joker",
+//         color: "black"
+//     },
+//     {
+//         suit: "spade",
+//         value: "",
+//         color: "black"
+//     },
+//     {
+//         suit: "diamond",
+//         value: "6",
+//         color: "red"
+//     },
+//     {
+//         suit: "heart",
+//         value: "6",
+//         color: "black"
+//     },
+//     {
+//         suit: "clubs",
+//         value: "6",
+//         color: "black"
+//     },
+//     {
+//         suit: "spade",
+//         value: "7",
+//         color: "black"
+//     },
+//     {
+//         suit: "diamond",
+//         value: "7",
+//         color: "red"
+//     },
+//     {
+//         suit: "heart",
+//         value: "7",
+//         color: "black"
+//     },
+//     {
+//         suit: "clubs",
+//         value: "7",
+//         color: "black"
+//     },
+//     {
+//         suit: "spade",
+//         value: "8",
+//         color: "black"
+//     },
+//     {
+//         suit: "diamond",
+//         value: "8",
+//         color: "red"
+//     },
+//     {
+//         suit: "heart",
+//         value: "8",
+//         color: "black"
+//     },
+//     {
+//         suit: "clubs",
+//         value: "8",
+//         color: "black"
+//     },
+//     {
+//         suit: "spade",
+//         value: "9",
+//         color: "black"
+//     },
+//     {
+//         suit: "diamond",
+//         value: "9",
+//         color: "red"
+//     },
+//     {
+//         suit: "heart",
+//         value: "9",
+//         color: "black"
+//     },
+//     {
+//         suit: "clubs",
+//         value: "9",
+//         color: "black"
+//     },
+//     {
+//         suit: "spade",
+//         value: "10",
+//         color: "black"
+//     },
+//     {
+//         suit: "diamond",
+//         value: "10",
+//         color: "red"
+//     },
+//     {
+//         suit: "heart",
+//         value: "10",
+//         color: "black"
+//     },
+//     {
+//         suit: "clubs",
+//         value: "10",
+//         color: "black"
+//     },
+//     {
+//         suit: "spade",
+//         value: "jack",
+//         color: "black"
+//     },
+//     {
+//         suit: "diamond",
+//         value: "jack",
+//         color: "red"
+//     },
+//     {
+//         suit: "heart",
+//         value: "jack",
+//         color: "black"
+//     },
+//     {
+//         suit: "clubs",
+//         value: "jack",
+//         color: "black"
+//     },
+//     {
+//         suit: "spade",
+//         value: "queen",
+//         color: "black"
+//     },
+//     {
+//         suit: "diamond",
+//         value: "queen",
+//         color: "red"
+//     },
+//     {
+//         suit: "heart",
+//         value: "queen",
+//         color: "black"
+//     },
+//     {
+//         suit: "clubs",
+//         value: "queen",
+//         color: "black"
+//     },
+//     {
+//         suit: "spade",
+//         value: "king",
+//         color: "black"
+//     },
+//     {
+//         suit: "diamond",
+//         value: "king",
+//         color: "red"
+//     },
+//     {
+//         suit: "heart",
+//         value: "king",
+//         color: "black"
+//     },
+//     {
+//         suit: "clubs",
+//         value: "king",
+//         color: "black"
+//     },
+//     {
+//         suit: "spade",
+//         value: "ace",
+//         color: "black"
+//     },
+//     {
+//         suit: "diamond",
+//         value: "ace",
+//         color: "red"
+//     },
+//     {
+//         suit: "heart",
+//         value: "ace",
+//         color: "black"
+//     },
+//     {
+//         suit: "clubs",
+//         value: "ace",
+//         color: "black"
+//     }
+//
+// ];
+// let reduce = cards.reduce((accumulator, card) => {
+//     accumulator.suit.push(card.suit);
+//     accumulator.color.push(card.color);
+//     accumulator.value.push(card.value);
+//     return accumulator;
+//
+// }, {suit: [], value: [], color: []});
+// console.log(reduce);
