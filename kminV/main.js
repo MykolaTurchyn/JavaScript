@@ -28,7 +28,7 @@
 // console.log(reduce);
 
 // 2) Створити масив з 20 стрічок та:
-let str = ["weer", "tfrefr", "uhrtk", "sert", "fik", "pmc", "asd", "nib", "meer"];
+// let str = ["weer", "tfrefr", "uhrtk", "sert", "fik", "pmc", "asd", "nib", "meer"];
 
 // a) Відсортувати його в алфавітному порядку
 // console.log(str.sort());
@@ -43,26 +43,54 @@ let str = ["weer", "tfrefr", "uhrtk", "sert", "fik", "pmc", "asd", "nib", "meer"
 // console.log(newStr)
 
 // d) Змінити кожне слово в масиві додавши на початок 'Sam says *ваше слово*'
+// let each = str.map((s) => {
+//    return  "sam says " + s
+// });
+// console.log(each);
 
 // 3) Все робити тільки за допомогою методів масивів!
 //     Дано масив :
-//     const users = [
-//         {name: 'vasya', age: 31, isMarried: false},
-//         {name: 'petya', age: 30, isMarried: true},
-//         {name: 'kolya', age: 29, isMarried: true},
-//         {name: 'olya', age: 28, isMarried: false},
-//         {name: 'max', age: 30, isMarried: true},
-//         {name: 'anya', age: 31, isMarried: false},
-//         {name: 'oleg', age: 28, isMarried: false},
-//         {name: 'andrey', age: 29, isMarried: true},
-//         {name: 'masha', age: 30, isMarried: true},
-//         {name: 'olya', age: 31, isMarried: false},
-//         {name: 'max', age: 31, isMarried: true}
-//     ];
+
+    const users = [
+        {name: 'vasya', age: 31, isMarried: false},
+        {name: 'petya', age: 30, isMarried: true},
+        {name: 'kolya', age: 29, isMarried: true},
+        {name: 'olya', age: 28, isMarried: false},
+        {name: 'max', age: 30, isMarried: true},
+        {name: 'anya', age: 31, isMarried: false},
+        {name: 'oleg', age: 28, isMarried: false},
+        {name: 'andrey', age: 29, isMarried: true},
+        {name: 'masha', age: 30, isMarried: true},
+        {name: 'olya', age: 31, isMarried: false},
+        {name: 'max', age: 31, isMarried: true}
+    ];
+
 // a) відсортувати його за  віком (зростання , а потім окремо спадання)
+// let sort1 = users.sort((a, b) => {
+//     return b.age - a.age;
+// });
+// console.log(sort1);
+//
+// let sort2 = users.sort((a, b) => {
+//     return a.age - b.age;
+// });
+// console.log(sort2);
+
 // b) відсортувати його за кількістю знаків в імені  (зростання , а потім окремо спадання)
+// let sortName1 = users.sort((a, b) => {
+//     return a.name.length - b.name.length;
+// });
+// console.log(sortName1);
+//
+// let sortName2 = users.sort((a, b) => {
+//     return b.name.length - a.name.length;
+// });
+// console.log(sortName2);
+
+
 // c) пройтись по ньому та додати кожному юзеру поле id - яке характеризує унікальний індентифікатор (По якому принципу його створювати - ваше рішення),
 // та зберегти це в новий масив (первинний масив залишиться без змін)
+
 // d) відсортувати його за індентифікатором
 // e) Всі хто одружений мають попасти у новий масив та отрмати квартиру (reduce)
 //
