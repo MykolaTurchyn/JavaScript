@@ -127,12 +127,33 @@
 //         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
 //     }
 // ];
+// let body = document.getElementsByTagName('body')[0];
+// let div = document.createElement('div');
+// body.append(div);
 //
-// Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
-// Приклад структири знаходиться у файлі example.png
-// ------------------
+// for (const course of coursesArray) {
+//     let title = document.createElement('p');
+//     let monthDuration = document.createElement('p');
+//     let hourDuration = document.createElement('p');
+//     let ul = document.createElement('ul');
 //
+//     div.append(title, monthDuration, hourDuration, ul);
 //
+//     title.innerText = 'Title: ' + course.title;
+//     monthDuration.innerText = 'Month Duration: ' + course.monthDuration;
+//     hourDuration.innerText = 'Hours Duration: ' + course.hourDuration;
+//     ul.innerText = 'Modules: ';
+//
+    // for (const module of course.modules) {
+    //     let li = document.createElement('li');
+    //     li.innerText = module + ',';
+    //     ul.appendChild(li);
+    // }
+// }
+// Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей,
+// для властивості modules зробити список з елементами
+
+
 //     - створити блок,
 //     - додати йому класи wrap, collapse, alpha, beta
 // - додати стилі(довільні значення) : колір фону, колір тексту, розмір тексту
