@@ -160,6 +160,22 @@
 // - додати цей блок в body.
 // - клонувати його повністю, та додати клон в body.
 //
+// let body = document.getElementsByTagName('body')[0];
+// let div = document.createElement('div');
+//
+// div.classList.add('wrap', 'collapse', 'alpha', 'beta');
+// body.appendChild(div);
+// div.innerText = 'Hello'
+//
+// let wrap = document.getElementsByClassName('wrap')[0];
+// wrap.style.background = 'silver';
+// wrap.style.height = '100px';
+// wrap.style.weight = '100px';
+// let collapse = document.getElementsByClassName('collapse')[0];
+// collapse.style.color = 'red';
+// let alpha = document.getElementsByClassName('alpha')[0];
+// alpha.style.fontSize = '15px';
+
 // - Є масив:
 //     ['Main','Products','About us','Contacts']
 // Взяти файл template1.html та додати в нього скріпт котрий для кожного елементу масиву створює li та додає його до блоку .menu
