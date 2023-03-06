@@ -144,15 +144,14 @@
 //     hourDuration.innerText = 'Hours Duration: ' + course.hourDuration;
 //     ul.innerText = 'Modules: ';
 //
-    // for (const module of course.modules) {
-    //     let li = document.createElement('li');
-    //     li.innerText = module + ',';
-    //     ul.appendChild(li);
-    // }
+// for (const module of course.modules) {
+//     let li = document.createElement('li');
+//     li.innerText = module + ',';
+//     ul.appendChild(li);
+// }
 // }
 // Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей,
 // для властивості modules зробити список з елементами
-
 
 //     - створити блок,
 //     - додати йому класи wrap, collapse, alpha, beta
@@ -165,6 +164,7 @@
 //
 // div.classList.add('wrap', 'collapse', 'alpha', 'beta');
 // body.appendChild(div);
+//
 // div.innerText = 'Hello'
 //
 // let wrap = document.getElementsByClassName('wrap')[0];
@@ -175,12 +175,21 @@
 // collapse.style.color = 'red';
 // let alpha = document.getElementsByClassName('alpha')[0];
 // alpha.style.fontSize = '15px';
+//
+// body.appendChild(div.cloneNode(true));
 
-// - Є масив:
-//     ['Main','Products','About us','Contacts']
 // Взяти файл template1.html та додати в нього скріпт котрий для кожного елементу масиву створює li та додає його до блоку .menu
 // Завдання робити через цикли.
+// - Є масив:
+// let itemOfMenu = ['Main', 'Products', 'About us', 'Contacts'];
+// let ulOnUI = document.getElementsByTagName('ul')[0];
 //
+// for (const menuValue of itemOfMenu) {
+//     let li = document.createElement('li');
+//     li.innerText = menuValue;
+//     ulOnUI.appendChild(li);
+// }
+
 // - Є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},
@@ -192,7 +201,21 @@
 // ];
 // Для кожного елементу масиву зробити блок в якому вивести інформацію про title та monthDuration
 // Завдання робити через цикли.
+// let body = document.getElementsByTagName('body')[0];
 //
+// for (const course of coursesAndDurationArray) {
+//
+//     let div = document.createElement('div');
+//     let title = document.createElement('p');
+//     let duration = document.createElement('p');
+//
+//     title.innerText = "Course: " + course.title;
+//     duration.innerText = "Duration: " + course.monthDuration + " month";
+//
+//     div.append(title, duration);
+//     body.appendChild(div);
+// }
+
 // - Є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},
