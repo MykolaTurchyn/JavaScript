@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+
+</body>
+<script>
+    let user = JSON.parse(localStorage.getItem('user'));
+    let body = document.getElementsByTagName('body')[0];
+    let div = document.createElement('div');
+    let p = document.createElement('p');
+
+
+    // p.innerText =
+    //     `Id: ${user?.id},
+    //      Name: ${user?.name},
+    //      UserName: ${user?.username},
+    //      Email: ${user?.email}  `
+    p.innerText = JSON.stringify(user);
+
+
+    div.appendChild(p);
+    body.appendChild(div);
+
+
+</script>
+</html>
